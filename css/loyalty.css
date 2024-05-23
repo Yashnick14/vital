@@ -1,0 +1,213 @@
+/*...............header...........*/
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #74c541;
+}
+
+/*...........logo...........*/
+
+header img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #FF6F61, #FDE68A, #5CC8FF, #E69A8D);
+    background-size: 600% 600%;
+    animation: AnimatedGradient 30s ease infinite;
+}
+
+@keyframes AnimatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* General Container */
+.loyalty-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border-left: 5px solid #6ca966;
+}
+
+/* Heading Styles */
+h2 {
+  color: #6ca966;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #444;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+.registration-form {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.registration-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6ca966;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #558b52;
+}
+
+/* Benefits Section */
+.benefits {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits li {
+  background-color: #e7f1e7;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #6ca966;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.benefits li:hover {
+  background-color: #d3e6d3;
+}
+
+/*...........footer...........*/
+
+footer {
+    background-color: #74c541;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+      }
+  
+      .footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+      }
+  
+      .footer .row a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+      }
+      .footer .row a:hover{
+        color: #000000;
+      }
+  
+      .footer .row ul {
+    list-style: none;
+    padding: 0;
+      }
+  
+      .footer .row ul li {
+    display: inline;
+    margin: 0 10px;
+      }
+  
+      @media screen and (max-width: 600px) {
+        nav ul li {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      
+        .topnav a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+  
+  /*...........Style all icons...........*/
+  
+  .bx {
+  padding: 10px;
+  font-size: 28px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  }
+  

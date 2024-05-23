@@ -1,0 +1,260 @@
+/*...............header...........*/
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #74c541;
+}
+
+/*...........logo...........*/
+
+header img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/vegetablesback.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*.............picture grids.........*/
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .vegetable-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .vegetable-item {
+    background-color: #ffffffc7;
+    border: 1px solid #ddddddee;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .vegetable-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .vegetable-item button {
+    background-color: #74c541;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vegetable-item button:hover {
+    background-color: #5ca22f;
+}
+
+/* Style for Font Awesome heart icon */
+.fa-heart {
+  color: red;         
+  font-size: 18px;    
+  transition: color 0.3s ease;
+}
+
+.fa-heart:hover {
+  color: darkred;     
+}
+
+  .vegetable-item img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+   
+    margin-bottom: 15px;
+  }
+  
+  .vegetable-item h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px; /* Adjust font size */
+    color: #000000;
+  }
+  
+  .vegetable-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size */
+    color: #000000;
+  }
+
+/* Container for the title and main content */
+.a {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f9f2c1; /* Light greenish background for a natural feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Title */
+h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #c1f0bd; /* Natural green for emphasis */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.a ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Individual list items */
+.a li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* Crisp, clean white background for each item */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #6ca966; /* Light green accent border */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Add an attractive hover effect */
+.a li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #4b7647; /* More prominent green on hover */
+}
+
+/* Adjust first-line style for emphasis */
+.a li:first-line {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inner paragraph text */
+.a li p {
+  margin: 0;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Clear unwanted breaks */
+.a br {
+  display: none;
+}
+
+
+
+  
+  /*...........footer...........*/
+  
+  footer {
+    background-color: #74c541;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+      }
+  
+      .footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+      }
+  
+      .footer .row a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+      }
+      .footer .row a:hover{
+        color: #000000;
+      }
+  
+      .footer .row ul {
+    list-style: none;
+    padding: 0;
+      }
+  
+      .footer .row ul li {
+    display: inline;
+    margin: 0 10px;
+      }
+  
+      @media screen and (max-width: 600px) {
+        nav ul li {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      
+        .topnav a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+  
+  /*...........Style all icons...........*/
+  
+  .bx {
+  padding: 10px;
+  font-size: 28px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  }

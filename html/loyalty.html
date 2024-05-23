@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting character encoding, viewport for responsiveness, and the title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital - Loyalty Registration</title>
+
+    <!-- Linking various CSS stylesheets for page styling -->
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/loyalty.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <!-- Adding icons from Boxicons and Font Awesome for better design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Adding a favicon for the website -->
+    <link rel="icon" href="../images/logo favicon.png" type="image/png">
+    <link rel="manifest" href="https://progressier.app/tzCHm7AdyEkVi0fWq1Zi/progressier.json"/>
+    <script defer src="https://progressier.app/tzCHm7AdyEkVi0fWq1Zi/script.js"></script>
+</head>
+
+<body>
+  <!-- Creating the header navigation section -->
+  <header>
+    <!-- Linking company logo to the homepage -->
+    <a href="../html/index.html"><img src="../images/logo.png" alt="Company Logo"></a>
+		<!-- Navigation menu with links to different pages -->
+		<nav>
+			<ul>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/products.html">Products</a></li>
+				<li><a href="../html/order.html">Order</a></li>
+				<li><a href="../html/loyalty.html"><i class="fa-solid fa-crown"></i>Loyalty</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-user"></i>Account</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <!-- Container section for the loyalty program registration form -->
+    <section class="loyalty-container">
+        <h2>Join Our Loyalty Program</h2>
+        <p>Earn rewards every time you shop!</p>
+        
+        <!-- Loyalty registration form -->
+        <form class="registration-form">
+            <h3>Register Now</h3>
+            
+            <!-- Input field for the user's full name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            
+            <!-- Input field for the user's email address -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Input field for the user's phone number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <!-- Dropdown to choose the desired loyalty scheme -->
+            <label for="scheme">Choose Loyalty Scheme:</label>
+            <select id="scheme" name="scheme" required>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="platinum">Platinum</option>
+            </select>
+            
+            <!-- Submit button to register for the loyalty program -->
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <!-- Information on the benefits of different loyalty schemes -->
+        <section class="benefits">
+            <h3>Benefits of Each Loyalty Scheme</h3>
+            <ul>
+                <li><strong>Bronze:</strong> 5% cashback on all purchases.</li>
+                <li><strong>Silver:</strong> 10% cashback, plus exclusive weekly deals.</li>
+                <li><strong>Gold:</strong> 15% cashback, exclusive deals, and priority support.</li>
+                <li><strong>Platinum:</strong> 20% cashback, premium deals, priority support, and special event invitations.</li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- Footer section for the website -->
+    <footer>
+      <section class="footer">
+        <!-- Social media links row -->
+        <section class="row" id="design">
+          <a href="#"><i class='bx bxl-facebook' style='color:#1877f2'></i></a>
+          <a href="#"><i class='bx bxl-instagram' style='color:#e9327a'></i></a>
+          <a href="#"><i class='bx bxl-youtube' style='color:#ff0000'></i></a>
+          <a href="#"><i class='bx bxl-twitter' style='color:#55acee'></i></a>
+        </section>
+        
+        <!-- Navigation links row -->
+        <section class="row">
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/products.html">Products</a></li>
+            <li><a href="../html/order.html">Order</a></li>
+            <li><a href="../html/loyalty.html">Loyalty</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+        </section>
+        
+        <!-- Footer copyright notice -->
+        <section class="row">
+          Vital Copyright © 2024 Vital - All rights reserved | Designed By: Yash 
+        </section>
+      </section>
+    </footer>  
+  </body>
+</html>
+
+<!-- References for resources used: -->
+<!-- Icons: https://boxicons.com/ -->
+<!-- Icons: https://fontawesome.com/ -->
+<!-- Fonts: https://fonts.google.com/ -->

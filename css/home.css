@@ -1,0 +1,281 @@
+/*...............header...........*/
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+nav ul li {
+  margin-right: 50px; /* Increased spacing between navigation links */
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #74c541;
+}
+
+/*...........logo...........*/
+
+header img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+/*...........search bar...........*/
+
+.search-container {
+  margin: 20px;
+  float: right;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  width: 200px;
+  box-sizing: border-box;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-container button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0 10px;
+  border-radius: 0 25px 25px 0;
+}
+
+.search-container button:hover {
+  opacity: 0.8;
+}
+
+.search-container .bx {
+  width: 20px; /* Increased icon size */
+  height: 20px;
+}
+
+/*...........body...........*/
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*...........picture...........*/
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container img {
+  margin-top: 10px;
+  width: 100%;
+  border: 5px solid #fff6f6;
+  background-color: #fff6f6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.688);
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 16px 30px;
+  margin-top: 180px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/*...........heading...........*/
+
+h1 {
+  text-align: center;
+  font-family: 'young serif';
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration-thickness: 5px;
+}
+
+h2 {
+  font-family: 'young serif';
+  font-weight: bold;
+  text-decoration-thickness: 5px;
+}
+
+/*...........paragraphs...........*/
+
+.a ul {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.a li {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/*...........list...........*/
+
+.ol.b {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+ol {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/*...........footer...........*/
+
+footer {
+  background-color: #74c541;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer .row a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer .row a:hover {
+  color: #000000;
+}
+
+.footer .row ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .row ul li {
+  display: inline;
+  margin: 0 10px;
+}
+.bx {
+  padding: 10px;
+  font-size: 28px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .search-container {
+    float: none;
+    margin: 10px auto;
+  }
+
+  .container .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 120px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+  }
+
+  .footer .row a {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header img {
+    height: 60px;
+  }
+
+  .search-container input[type=text] {
+    width: 150px;
+    padding: 8px;
+  }
+
+  .container img {
+    margin-top: 5px;
+    border: 3px solid #fff6f6;
+  }
+
+  .container .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

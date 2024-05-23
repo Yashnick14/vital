@@ -1,0 +1,205 @@
+  /*...............header...........*/
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.199);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #74c541;
+}
+
+/*...........logo...........*/
+
+header img {
+  height: 100px;
+  margin-left: 20px;
+}
+
+  h1{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/dairyyy.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*.............picture grids.........*/
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .dairy-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .dairy-item {
+    background-color: #ffffffc7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .dairy-item:hover {
+    transform: scale(1.05);
+  }
+
+  .dairy-item button {
+    background-color: #74c541;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dairy-item button:hover {
+    background-color: #5ca22f;
+}
+
+/* Style for Font Awesome heart icon */
+.fa-heart {
+  color: red;         
+  font-size: 18px;    
+  transition: color 0.3s ease;
+}
+
+.fa-heart:hover {
+  color: darkred;     
+}
+
+  .dairy-item img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+   
+    margin-bottom: 15px;
+  }
+  
+  .dairy-item h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px; /* Adjust font size */
+    color: #000000;
+  }
+  
+  .dairy-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px; /* Adjust font size */
+    color: #000000;
+  }
+
+  .dairy-item .description {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0;
+}
+  
+  /*...........footer...........*/
+  
+  footer {
+    background-color: #74c541;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+      }
+  
+      .footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+      }
+  
+      .footer .row a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+      }
+      .footer .row a:hover{
+        color: #000000;
+      }
+  
+      .footer .row ul {
+    list-style: none;
+    padding: 0;
+      }
+  
+      .footer .row ul li {
+    display: inline;
+    margin: 0 10px;
+      }
+  
+      @media screen and (max-width: 600px) {
+        nav ul li {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      
+        .topnav a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+  
+  /*...........Style all icons...........*/
+  
+  .bx {
+  padding: 10px;
+  font-size: 28px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  }
