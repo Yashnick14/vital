@@ -193,6 +193,10 @@ tfoot {
   font-weight: bold;
 }
 
+#link{
+  display: inline-block;
+}
+
 /*...........footer...........*/
 
 footer {
