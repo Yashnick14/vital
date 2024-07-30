@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting character encoding, viewport for responsiveness, and the title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital - Checkout</title>
+
+    <!-- Linking various CSS stylesheets for page styling -->
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/checkout.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <!-- Adding icons from Boxicons and Font Awesome for better design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Adding a favicon for the website -->
+    <link rel="icon" href="../images/logo favicon.png" type="image/png">
+    <link rel="manifest" href="https://progressier.app/tzCHm7AdyEkVi0fWq1Zi/progressier.json"/>
+    <script defer src="https://progressier.app/tzCHm7AdyEkVi0fWq1Zi/script.js"></script>
+</head>
+
+<body>
+  <!-- Creating the header navigation section -->
+  <header>
+    <!-- Linking company logo to the homepage -->
+    <a href="../html/index.html"><img src="../images/logo.png" alt="Company Logo"></a>
+		<!-- Navigation menu with links to different pages -->
+		<nav>
+			<ul>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/products.html">Products</a></li>
+				<li><a href="../html/order.html">Order</a></li>
+				<li><a href="../html/loyalty.html"><i class="fa-solid fa-crown"></i>Loyalty</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-user"></i>Account</a></li>
+			</ul>
+		</nav>
+	</header>
+  <br><br>
+    <section class="checkout">
+        <h1>Checkout</h1>
+        <form id="checkoutForm">
+            <h2>Order Summary</h2>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="summaryTotalPrice">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+    
+            <h2>Personal Details</h2>
+            <label>Name: <input type="text" id="name" required></label><br>
+            <label>Email: <input type="email" id="email" required></label><br>
+    
+            <h2>Delivery Details</h2>
+            <label>Address: <input type="text" id="address" required></label><br>
+            <label>City: <input type="text" id="city" required></label><br>
+            <label>Zip Code: <input type="text" id="zip" required></label><br>
+    
+            <h2>Payment Information</h2>
+            <label>Card Number: <input type="text" id="card" required pattern="\d{16}" placeholder="Please enter the 16 digits on your card"></label><br>
+            <label>Expiry Date: <input type="text" id="expiry" required pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM / YY"></label><br>
+            <label>CVV: <input type="text" id="cvv" required pattern="\d{3}" placeholder="Please enter the 3 digits on your card"></label><br>
+
+                        <!-- Payment Method Icons -->
+                        <fieldset class="payment-methods">
+                          <legend id="text">We Accept</legend>
+                          <img src="../images/visa.png" alt="Visa">
+                          <img src="../images/mastercard.png" alt="MasterCard">
+                          <img src="../images/discover network.png" alt="Discover Network">
+                          <img src="../images/american express.png" alt="American Express">
+                        </fieldset>
+    <br>
+            <button type="submit" id="payButton">Pay</button>
+        </form>
+    </section>
+    <br><br>
+    <!-- Footer section for the website -->
+    <footer>
+      <section class="footer">
+        <!-- Social media links row -->
+        <section class="row" id="design">
+          <a href="#"><i class='bx bxl-facebook' style='color:#1877f2'></i></a>
+          <a href="#"><i class='bx bxl-instagram' style='color:#e9327a'></i></a>
+          <a href="#"><i class='bx bxl-youtube' style='color:#ff0000'></i></a>
+          <a href="#"><i class='bx bxl-twitter' style='color:#55acee'></i></a>
+        </section>
+        
+        <!-- Navigation links row -->
+        <section class="row">
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/products.html">Products</a></li>
+            <li><a href="../html/order.html">Order</a></li>
+            <li><a href="../html/loyalty.html">Loyalty</a></li>
+            <li><a href="../html/about.html">About</a></li>
+          </ul>
+        </section>
+        
+        <!-- Footer copyright notice -->
+        <section class="row">
+          Vital Copyright © 2024 Vital - All rights reserved | Designed By: Yash 
+        </section>
+      </section>
+    </footer> 
+    <script src="../javascript/main.js"></script> 
+  </body>
+</html>
+
+<!-- References for resources used: -->
+<!-- Icons: https://boxicons.com/ -->
+<!-- Icons: https://fontawesome.com/ -->
+<!-- Fonts: https://fonts.google.com/ -->
