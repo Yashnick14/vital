@@ -44,7 +44,7 @@ header img {
 /*............body............*/
 /* General body styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-image: url("../images/order.png");
@@ -54,89 +54,143 @@ body {
   color: #333;
 }
 
-/* Container styles */
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  transition: all 0.3s ease;
-}
 
-h1 {
-  text-align: center;
-  color: #444; /* Darker heading */
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
 }
 
 form {
-  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.462);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
 }
 
-/* Form group styles */
-.form-group {
-  margin-bottom: 20px;
+.category {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.468);
+}
+
+.category label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.category label input {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px;
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.category img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5em;
 }
 
 label {
   display: block;
-  margin-bottom: 8px;
+  margin: 0.5em 0;
   font-weight: bold;
-  color: #444;
-  font-size: 1.1rem;
 }
 
-/* Input, select, and textarea styles */
-input[type="text"], input[type="number"], select, textarea {
+input[type="number"], input[type="text"], input[type="email"] {
   width: calc(100% - 20px);
-  padding: 12px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin: 5px 0;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  font-size: 1rem;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+input[type="number"]:focus, input[type="text"]:focus, input[type="email"]:focus {
   border-color: #4CAF50;
-  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
-  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-select, textarea {
-  width: 100%;
-  background-color: #f9f9f9;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-/* Submit button styles */
-input[type="submit"] {
+button {
   background-color: #4CAF50;
   color: white;
-  padding: 14px;
-  margin: 10px 0;
   border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+button:hover {
   background-color: #45a049;
-  transform: scale(1.05); /* Slightly larger on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.buttons {
+  text-align: center;
+}
+
+.order-summary {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+
+.order-summary h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color: #4CAF50;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tfoot {
+  font-weight: bold;
 }
 
 /*...........footer...........*/
@@ -199,3 +253,4 @@ footer {
   text-decoration: none;
   }
   
+
