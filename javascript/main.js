@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('cvv').checkValidity()) {
                 
                 const deliveryDate = new Date();
-                deliveryDate.setDate(deliveryDate.getDate() + 5);
+                deliveryDate.setDate(deliveryDate.getDate());
                 alert(`Thank you for your purchase! Your order will be delivered by ${deliveryDate.toDateString()}.`);
                 
             } else {
