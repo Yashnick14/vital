@@ -115,7 +115,7 @@ header {
   }
 
   button {
-    background-color: #74c541;
+    background-color: var(--colour);
     color: #fff;
     border: none;
     padding: 15px 50px;
@@ -193,7 +193,7 @@ header {
 
 footer {
     background-color: #74c541;
-    color: #fff;
+    color: var(--colour);
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -208,12 +208,12 @@ footer {
   
   .footer .row a {
     margin: 0 10px;
-    color: #fff;
+    color: var(--colour);
     font-size: 20px;
   }
   
   .footer .row a:hover {
-    color: #000000;
+    color: #ffffff;
   }
   
   .footer .row ul {
