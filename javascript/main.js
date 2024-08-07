@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const deliveryDate = new Date();
                 deliveryDate.setDate(deliveryDate.getDate());
-                alert(`Thank you for your purchase! Your order will be delivered by ${deliveryDate.toDateString()}.`);
+                alert(`Thank you for your purchase, ${name}! Your order will be delivered by ${deliveryDate.toDateString()}.`);
                 
             } else {
                 alert("Please enter valid details.");
